@@ -13,7 +13,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -109,6 +109,34 @@ nav ul{
 .content{
   background-color: #dde7e9;
 }
+
+.twitch{
+  padding: 20px;
+  text-align: center;
+}
+
+.twitch h1{
+  padding-bottom: 30px;
+}
+
+.twitchplayer{
+  width: 75%;
+  height: 500px;
+}
+
+@media (max-width: 1200px){
+  .twitchplayer{
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .twitchplayer{
+    height: 250px;
+  }
+}
+
+/* Articles */
 .cardsec{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -157,7 +185,7 @@ nav ul{
   color: #b22485;
 }
 
-.cardsec .tech{
+.cardsec .coding{
   background-color: #d1e8ff;
   color: #2968a8;
 }
