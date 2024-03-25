@@ -147,12 +147,6 @@ nav ul{
   margin-bottom: 20px;
 }
 
-.introtxt p{
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 1px;
-}
-
 @media (max-width: 1200px){
   .introtxt h2{
     font-size: 30px;
@@ -164,12 +158,6 @@ nav ul{
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 20px;
-  }
-  
-  .introtxt p{
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 1px;
   }
 }
 
@@ -190,12 +178,6 @@ nav ul{
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 20px;
-  }
-  
-  .introtxt p{
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 1px;
   }
 }
 .introbtndiv{
