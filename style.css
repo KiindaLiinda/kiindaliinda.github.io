@@ -296,6 +296,11 @@ nav ul{
   font-weight: 600;
 }
 
+.card p{
+  text-align: left;
+  text-decoration: none;
+}
+
 .card .arrow{
   display: flex;
   align-items: center;
