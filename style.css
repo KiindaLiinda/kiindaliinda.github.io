@@ -166,7 +166,7 @@ nav ul{
     padding-left: 20px;
   }
   .intropic{
-    width: 250px;
+    width: 200px;
   }
   .introtxt h2{
     font-size: 20px;
@@ -266,7 +266,6 @@ nav ul{
 
 .articletag{
   display: inline-block;
-  background: #f7dff5;
   margin-top: 32px;
   padding: 8px 15px;
   font-size: 0.75rem;
@@ -275,16 +274,16 @@ nav ul{
 }
 
 /* ARTICLE TAGS */
-.cardsec .gaming{
+.gaming{
   background-color: #f7dff5;
   color: #b22485;
 }
 
-.cardsec .coding{
+.coding{
   background-color: #d1e8ff;
   color: #2968a8;
 }
-.cardsec .career{
+.career{
   background-color: #d6f8d6;
   color: #205c20;
 }
@@ -411,7 +410,6 @@ nav ul{
 }
 .articletitletag{
   display: inline-block;
-  background: #f7dff5;
   padding: 8px 15px;
   font-size: 0.75rem;
   border-radius: 50px;
@@ -430,7 +428,6 @@ nav ul{
   }
   .articletitletag{
     display: inline-block;
-    background: #f7dff5;
     padding: 8px 15px;
     font-size: 0.75rem;
     border-radius: 50px;
