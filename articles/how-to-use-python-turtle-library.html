@@ -29,26 +29,166 @@
         </nav>
 
         <!-- Content -->
-        <div class="content">
-            <div class="articleimg">
-                <img src="../images/articleimgs/pythonturtlehowto.png">
+        <div class="articlecontent">
+            <div class="promobar">
+               <p>Consdier following my Twitch channel: <a href="https://twitch.tv/KiindaLiinda">https://twitch.tv/KiindaLiinda</a></p> 
             </div>
             <div class="articletitle">
+                <div class="articleimg">
+                    <img src="../images/articleimgs/pythonturtlehowto.png">
+                </div>
                 <h2>How to Use the Python Turtle Library</h2>
                 <div class="articleinfo">
                     <p>March 25, 2024</p>
                     <p>KiindaLiinda / Linda G.</p>
                     <p>Tags:</p>
-                    <span class="articletag">Coding</span>
+                    <span class="articletitletag">Coding</span>
                 </div>
                 <hr>
             </div>
             <div class="articletxt">
+                <h3>Overview</h3>
                 <p>For Pi Day, I hosted a workshop on my Twitch channel during the Twitch Women’s Guild Pi Day Raid Train. This article goes over a quick tutorial 
                     on how to use the Python Turtle library, as well as additional resources if you want to explore more. Additionally, if you’re an educator who 
                     wants to use this workshop for a course, there’s a link to the workshop document at the bottom that you can share with your students. The document 
                     contains everything on this website, but you’ll be able to download it as a PDF so you can post it for your students, without them needing to visit this website.
                 </p>
+                <p>Python’s Turtle Library allows us to use a variety of methods to create art using code! In this workshop, we will be learning how to create our own drawing 
+                    of a Turtle, as well as learning a few other tools and tips to create unique patterns. The code used for this workshop can be found on my GitHub
+                    (linked at the end).</p>
+                <h3>What You'll Need</h3>
+                <p>If you want to do this locally on your device (installation required):</p>
+                <ul>
+                    <li>Install Python (latest version) <a href="https://python.org/downloads">here</a>.</li>
+                    <li>Install an IDE of your choice (I personally use Visual Studio Code which can be found <a href="https://code.visualstudio.com/download">here</a>).</li>
+                </ul>
+                <p>If you want to do this on the cloud (no installation required):</p>
+                <ul>
+                    <li>Create an account on <a href="https://replit.com">Replit</a>.</li>
+                    <li>Create a new "Repl" using the "Python (with Turtle)" template.</li>
+                </ul>
+                <h3>Method Dictionary</h3>
+                <p> We'll be using a variety of methods throughout this example. Here's the definitions and information about their parameters.</p>
+                <div class="pyturt-table">
+                    <table>
+                        <tr>
+                            <th>Method</th>
+                            <th>Parameters</th>
+                            <th>Definition</th>
+                        </tr>
+                        <tr>
+                            <td>pencolor(a)</td>
+                            <td>a -> color (string or integer)</td>
+                            <td>This method changes the color of the lines that our turtle makes. Think of it as the color of the outline.</td>
+                        </tr>
+                        <tr>
+                            <td>begin_fill()</td>
+                            <td>N/A</td>
+                            <td>This method tells the turtle that it’s going to start drawing a shape.</td>
+                        </tr>
+                        <tr>
+                            <td>end_fill()</td>
+                            <td>N/A</td>
+                            <td>This method tells the turtle that it’s going to close a shape.</td>
+                        </tr>
+                        <tr>
+                            <td>speed(a)</td>
+                            <td>a -> speed value (integer)</td>
+                            <td>This method will change the speed in which the turtle is drawing. You get to see the turtle draw in real time 
+                            and depending on the length of your code, it can take long to finish drawing.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>setx(a)</td>
+                            <td>a -> coordinate (integer or float)</td>
+                            <td>This method will move your turtle to a specific x coordinate, while keeping the same y coordinate.</td>
+                        </tr>
+                        <tr>
+                            <td>sety(a)</td>
+                            <td>a -> coordinate (integer or float)</td>
+                            <td>This method will move your turtle to a specific y coordinate, while keeping the same x coordinate.</td>
+                        </tr>
+                        <tr>
+                            <td>left(a)</td>
+                            <td>a -> degrees (integer or float)</td>
+                            <td>This method will turn the direction in which your turtle is facing to the left by a certain amount of degrees.</td>
+                        </tr>
+                        <tr>
+                            <td>right(a)</td>
+                            <td>a -> degrees (integer or float)</td>
+                            <td>This method will turn the direction in which your turtle is facing to the right by a certain amount of degrees.</td>
+                        </tr>
+                        <tr>
+                            <td>forward(a)</td>
+                            <td>a -> distance (integer or float)</td>
+                            <td>This method will move your turtle a certain distance in the direction it is facing. </td>
+                        </tr>
+                        <tr>
+                            <td>back(a)</td>
+                            <td>a -> distance (integer or float)</td>
+                            <td>This method will move your turtle a certain distance in the direction opposite to which it’s facing.</td>
+                        </tr>
+                        <tr>
+                            <td>fillcolor(a)</td>
+                            <td>a -> color (string, rgb values, or hex code)</td>
+                            <td>This method changes the color that a shape is being filled with.</td>
+                        </tr>
+                        <tr>
+                            <td>pensize(a)</td>
+                            <td>a -> thickness (positive integer)</td>
+                            <td>This method changes the thickness or width of the lines that the turtle creates with the pen, or the thickness of the outline of a shape being created.</td>
+                        </tr>
+                        <tr>
+                            <td>dot(a,b)</td>
+                            <td>a -> size (integer) and b -> color (string, rgb values, or hex code)</td>
+                            <td>This method creates a dot at the location of your turtle and fills it completely with a color (no outline).</td>
+                        </tr>
+                        <tr>
+                            <td>pendown()</td>
+                            <td>N/A</td>
+                            <td>This method tells the turtle to start drawing. Any movements after calling this method will result in a line being drawn.</td>
+                        </tr>
+                        <tr>
+                            <td>penup()</td>
+                            <td>N/A</td>
+                            <td>This method stops the turtle from drawing. Used to move the turtle without creating accidental lines.</td>
+                        </tr>
+                        <tr>
+                            <td>hideturtle()</td>
+                            <td>N/A</td>
+                            <td>This method hides the turtle (e.g. cursor) when it’s called.</td>
+                        </tr>
+                        <tr>
+                            <td>showturtle()</td>
+                            <td>N/A</td>
+                            <td>This method shows the turtle (e.g. cursor) when it’s called.</td>
+                        </tr>
+                        <tr>
+                            <td>turtle.done()</td>
+                            <td>N/A</td>
+                            <td>This method is called when our drawing is done. It stops the code, but keeps the turtle drawing 
+                            window open so we can see what we created. Without this command, the code will complete executing and close immediately.</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Drawing a Turtle</h3>
+                <p>We will start by creating a turtle. This turtle looks like this:</p>
+                <div class="pyturtimg">
+                    <img src="../images/articleimgs/pythonturtle.png">
+                </div>
+                <p>You’ll get the opportunity to customize the colors of your turtle! This exercise will allow you to test how creating shapes work, 
+                    but the exact code for my turtle will be shown at the end. Good luck!</p>
+                <h4>Steps:</h4>
+                <p>Create a new file or Repl. On Repl, title it "Turtle Drawing". Locally, title it "TurtleDrawing.py".</p>
+                <p>At the top of your file, include the following line:</p>
+                <table class="codetable">
+                    <th>import turtle</th>
+                </table>
+                <p> This line will allow us to use the methods in the Turtle library that I mentioned above.</p>
+                <p>Next, we're going to give our Turtle a nickname. Why? Without a nickname, anytime we want to call a method, we'll need to have the following before the method call:</p>
+                <table class="codetable">
+                    <th>turtle.Turtle()</th>
+                </table>
             </div>
             <div class="articlefooter">
 

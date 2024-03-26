@@ -9,12 +9,12 @@
 /* Rich Black - #000011 */
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -226,7 +226,7 @@ nav ul{
   }
 }
 
-.content h1, p{
+.content h1, .content p{
   text-align: center;
   padding-top: 20px;
 }
@@ -359,8 +359,31 @@ nav ul{
 }
 
 /* ARTICLE DEFAULT CSS */
+/* Promo Bar */
+.promobar{
+  background-color: #66d2ea;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.promobar p{
+  text-align: center;
+}
+
+.promobar a{
+  text-decoration: none;
+}
+
+.promobar a:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
 /* Article img */
 .articleimg{
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 .articleimg img{
@@ -376,7 +399,7 @@ nav ul{
   display: block;
   text-align: center;
   font-size: 35px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -386,20 +409,37 @@ nav ul{
   padding-right: 30px;
   display: inline-block;
 }
+.articletitletag{
+  display: inline-block;
+  background: #f7dff5;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600px;
+}
+
 @media screen and (max-width: 980px){
   .articletitle h2{
-    text-align: center;
     font-size: 20px;
     font-weight: 700;
   }
   .articletitle p{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 14px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 15px;
+  }
+  .articletitletag{
+    display: inline-block;
+    background: #f7dff5;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600px;
   }
 }
 .articletitle hr{
-  border: 5px solid #000011;
+  margin-top: 15px;
+  border: 3px solid #4e92a8;
 }
 
 .articleinfo{
@@ -423,4 +463,62 @@ nav ul{
     margin-left: 50px;
     margin-right: 50px;
   }
+}
+
+/* ARTICLE SPECIFIC CSS */
+.articlecontent{
+  text-align: left;
+}
+
+.articlecontent p{
+  text-indent: 25px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.articlecontent h3{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.articlecontent h4{
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+/* How to Use Python Turtle Library */
+.pyturt-table table{
+  border-collapse: collapse;
+  text-align: center;
+}
+.pyturt-table table, .pyturt-table th, .pyturt-table td{
+  border: 2px solid #000011;
+  padding: 5px;
+}
+.pyturt-table th{
+  background-color: #66d2ea
+}
+.pyturtimg{
+  display: flex;
+  justify-content: center;
+
+}
+.articletxt .pyturtimg img{
+  display: block;
+  align-content: center;
+}
+
+.codetable{
+  width: 100%;
+  background-color: #000011;
+  color: #dde7e9;
+  text-align: left;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.codetable th{
+  text-indent: 25px;
 }
