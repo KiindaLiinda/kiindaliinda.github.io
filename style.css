@@ -392,7 +392,12 @@ a.active,a:hover{
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 60%;
+  width: 30%;
+}
+@media screen and (max-width: 1200px){
+  .articleimg img{
+    width: 60%;
+  }
 }
 
 /* Article Title */
@@ -448,8 +453,8 @@ a.active,a:hover{
 
 /* Article Text */
 .articletxt{
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 @media (max-width: 1200px){
   .articletxt{
