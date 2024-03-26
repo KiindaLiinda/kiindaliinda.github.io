@@ -39,12 +39,12 @@
                 </div>
                 <h2>How to Use the Python Turtle Library</h2>
                 <div class="articleinfo">
-                    <p>March 25, 2024</p>
+                    <p>March 26, 2024</p>
                     <p>KiindaLiinda / Linda G.</p>
                     <p>Tags:</p>
                     <span class="articletitletag coding">Coding</span>
                 </div>
-                <hr>
+                <hr class="articlehr">
             </div>
             <div class="articletxt">
                 <h3>Overview</h3>
@@ -58,15 +58,11 @@
                     (linked at the end).</p>
                 <h3>What You'll Need</h3>
                 <p>If you want to do this locally on your device (installation required):</p>
-                <ul>
-                    <li>Install Python (latest version) <a href="https://python.org/downloads">here</a>.</li>
-                    <li>Install an IDE of your choice (I personally use Visual Studio Code which can be found <a href="https://code.visualstudio.com/download">here</a>).</li>
-                </ul>
+                <p>- Install Python (latest version) <a href="https://python.org/downloads">here</a>.</p>
+                <p>- Install an IDE of your choice (I personally use Visual Studio Code which can be found <a href="https://code.visualstudio.com/download">here</a>).</p>
                 <p>If you want to do this on the cloud (no installation required):</p>
-                <ul>
-                    <li>Create an account on <a href="https://replit.com">Replit</a>.</li>
-                    <li>Create a new "Repl" using the "Python (with Turtle)" template.</li>
-                </ul>
+                <p>- Create an account on <a href="https://replit.com">Replit</a>.</p>
+                <p>- Create a new "Repl" using the "Python (with Turtle)" template.</p>
                 <h3>Method Dictionary</h3>
                 <p> We'll be using a variety of methods throughout this example. Here's the definitions and information about their parameters.</p>
                 <div class="pyturt-table">
@@ -244,9 +240,361 @@
                     an eye for your turtle using the dot() method. You can run your code as many times as you want to experiment with values. Make sure you save 
                     the file first so that your changes will affect the test run.</p>
                 <a class="sourcecodebtn" href="https://github.com/KiindaLiinda/KiindaKodiing/blob/main/TurtleDrawing.py">View Source Code on GitHub</a>
-            </div>
-            <div class="articlefooter">
-
+                <h3> Making Patterns and Designs of Your Own</h3>
+                <p> We'll be using loops to show how you can create more complex designs, like the one shown below:</p>
+                <div class="pyturtimg">
+                    <img src="../images/articleimgs/pythondrawing.png">
+                </div>
+                <p>For example, we will be utilizing for-loops. I will briefly go over what a for-loop is, but if you are familiar with it, you can skip that section.</p>
+                <h3>For-Loop Introduction</h3>
+                <p>For-loops are a type of structure used in Python and most programming languages to repeat our code under a certain condition. In early examples, 
+                    you'll typically be looping code a certain number of times, rather than using a condition statement.</p>
+                <p>Loops can often give you errors. For the purpose of this example, I recommend you only put commands relating to color change and movement inside the loops.</p>
+                <p>The syntax for for-loops are as follows:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     [insert code here]</pre></th>
+                    </tr>
+                </table>
+                <p>"x" is the loop variable. It starts at 0 and iterates until it reaches the value that's inside the range() method, which in this case is 5.</p>
+                <p>Python uses indents to group code. When we're using ofr loops, we need the code that's inside the loop to be indented once. The colon (:) tells 
+                    the program that we're going to follow with a code block, which is indicated by the indent. When we want to end the loop, we just remove the indent.</p>
+                <p>This looks like this:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th>this code is NOT inside the loop</th>
+                    </tr>
+                    <tr>
+                        <th>this code is NOT inside the loop</th>
+                    </tr>
+                </table>
+                <p>If you randomly add an indent without a loop present, you'll get something called an "indentation error." This looks like this:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th>this code is NOT inside the loop</th>
+                    </tr>
+                    <tr>
+                        <th>this code is NOT inside the loop</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code will throw an INDENTATION ERROR!</pre></th>
+                    </tr>
+                </table>
+                <p>You can also put loops inside of other loops! This is called a nested loop (or nested for-loop). These are written like this:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the first loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     for y in range(3):</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>          this code is inside the second loop</pre></th>
+                    </tr>
+                </table>
+                <p>You need to use a different loop variable for the second loop. In this clase, "x" is only for the first loop and "y" is 
+                    being iterated for the second loop. You need to indent the code inside the second loop twice so that the program knows it belongs to the second loop.</p>
+                <p>The first loop repeats the code 5 times and the second loop repeats 3 times. However, since the loop is nested, the second loop actually runs a total of 15 times. Everytime loop 1 runs, the second loop runs for 3 times.</p>
+                <p>- Loop 1 runs for the first time with Loop 2 running 3 times</p>
+                <p>- Loop 1 runs for the second time with Loop 2 running 3 times again (6 total)</p>
+                <p>- Loop 1 runs for the third time with Loop 2 running 3 times again (9 total)</p>
+                <p>- Loop 1 runs for the fourth time with Loop 2 running 3 times again (12 total)</p>
+                <p>- Loop 1 runs for the fifth time with Loop 2 running 3 times again (15 total)</p>
+                <p>You can also run code inside the first loop after the second loop without an error. It looks like this:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the first loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     for y in range(3):</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>          this code is inside the second loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the first loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     this code is inside the first loop</pre></th>
+                    </tr>
+                    <tr>
+                        <th>this code is outside of the loops</th>
+                    </tr>
+                </table>
+                <h3>Using For-Loops on Turtle Methods</h3>
+                <p>You can make the turtle run code many times like this:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     name.forward(50)</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     name.right(30)</pre></th>
+                    </tr>
+                </table>
+                <p>Replace name with the name of your turtle. This code will move your turtle 50 steps forward and turn 30 degres to the right 5 times.</p>
+                <p>This is what that code loops like without a loop:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                </table>
+                <p>For-loops allow us to make the code shorter. It's especially useful if we're going to make designs like the one I made above, where the pattern is symmetrical.</p>
+                <p>You can also create nested for-loops with Turtle methods as well. Take a look at this example:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     name.forward(50)</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     name.right(30)</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     for y in range(3):</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>          name.forward(20)</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>          name.left(30)</pre></th>
+                    </tr>
+                </table>
+                <p>Replace name with the name of your turtle. This code will make your turtle move 50 steps forward, turn 30 degrees to the right, 
+                    and then move forward 20 steps and move to the left 30 degrees three times in a row.</p>
+                <p>This is what the code will loop like without the loops:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(50)</th>
+                    </tr>
+                    <tr>
+                        <th>name.right(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                    <tr>
+                        <th>name.forward(20)</th>
+                    </tr>
+                    <tr>
+                        <th>name.left(30)</th>
+                    </tr>
+                </table>
+                <p>This looks crazy right? Hard to read and if you make a logical error (a type of error where your code works 
+                    and isn’t wrong, but you’re getting a result that’s different from what you want), you might not know 
+                    where to even look. Loops help us condense this code to make it easier to control.</p>
+                <p>Play around with loops and nested loops to create some cool designs of your own! You can also use nested loops to create multi-colored designs. Take a look at this:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>for x in range(5):</th>
+                    </tr>
+                    <tr>
+                        <th><pre>     name.pencolor("red")</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     name.forward(50)</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     name.right(30)</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>     for y in range(3):</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>          name.pencolor("blue")</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>          name.forward(20)</pre></th>
+                    </tr>
+                    <tr>
+                        <th><pre>          name.left(30)</pre></th>
+                    </tr>
+                </table>
+                <p>The code above will create a design that changes between red and blue when loop 1 runs. All of the contents 
+                    of loop 1 will be in red and all of the content in loop 2 will be in blue. If you want to do something a 
+                    little more advanced, you can make a list of different colors you like and have the program to randomly 
+                    pick colors. I’ll add a resource at the bottom with a resource for randomizing with Python.</p>
+                <a class="sourcecodebtn" href="https://github.com/KiindaLiinda/KiindaKodiing/blob/main/TurtleArt.py">View Source Code on GitHub</a>
+                <h3>Conclusion</h3>
+                <p>You now know how to make art with Python! Cool right? Share what you’ve made with me on social media by tagging me in your post 
+                    (@ KiindaLiinda). Below are some resources:</p>
+                <p>- <strong>Python Turtle Documentation</strong> can be found <a href="https://docs.python.org/3/library/turtle.html#module-turtle">here</a>. This website 
+                    goes over all of the methods that are included with the Turtle library. It includes, some basic examples, how-tos, and more.</p>
+                <p>- <strong>GeeksForGeeks Random Select</strong> can be found <a href="https://www.geeksforgeeks.org/python-select-random-value-from-a-list/">here</a>. This 
+                    website goes over how to randomly select a value from a list. You can use this to generate random color values from a list. There’s other 
+                    programs that can randomly generate hex colors that you can look up depending on what you’re trying to achieve.</p>
+                <a class="sourcecodebtn" href="https://docs.google.com/document/d/1VTND5XY8dHVvyOIZUVZ7UTmsfVsU1A0ucouxI1ki9qw/edit?usp=sharing">Download PDF Instructions</a>
+                <hr class="articlehr">
+                <div class="intro">
+                    <img src="../images/introimg.png" class="intropic">
+                    <div class="introtxt">
+                        <h2>KiindaLiinda / Linda G.</h2>
+                        <p>March 26, 2024</p>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
         <!-- Footer -->
