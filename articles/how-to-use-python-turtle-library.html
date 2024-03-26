@@ -189,6 +189,61 @@
                 <table class="codetable">
                     <th>turtle.Turtle()</th>
                 </table>
+                <p>With a nickname, we will shorten this code and make it easier to read and write.</p>
+                <p>To do this, include the following code:</p>
+                <table class="codetable">
+                    <th>name = turtle.Turtle()</th>
+                </table>
+                <p>Replace "name" with the name of your turtle! For example:</p>
+                <table class="codetable">
+                    <th>john = turtle.Turtle()</th>
+                </table>
+                <p>NOTE: The name of your turtle is case-sensitive, meaning that if the name has a variety of casing (upper/lower case letters), 
+                    then having a different variety will cause your code to throw an error (e.g. John vs. john).</p>
+                <p>Next, we're going to make sure we can test our code.</p>
+                <p>Include the following code at the end of your program:</p>
+                <table class="codetable">
+                    <th>turtle.done()</th>
+                </table>
+                <p>This will line will ensure you can see your creation after the code is done running. Make sure all of the code you write fore 
+                    your turtle is above this line. This line should always be the last line of your program.</p>
+                <p>Next, we're going to set up the turlte. We're going to give it an outline color and a pen thickness.</p>
+                <p>Include the following code:</p>
+                <table class="codetable">
+                    <tr>
+                        <th>name.pencolor("black")</th>
+                    </tr>
+                    <tr>
+                        <th>name.pensize(3)</th>
+                    </tr>
+                </table>
+                <p>Replace name with the name of your turtle. You can change the color of the outline to whatever color you want. Remember to 
+                    use the format described in the methods dictionary above. You can change the thickness of the pen to whatever value you want, 
+                    but I recommend keeping it a relatively thin number just so it's easier to see and use.</p>
+                <p>Next, we're going to draw the shell of the turtle. Start by selecting what color you want the shell to be.</p>
+                <p>Include the following code:</p>
+                <table class="codetable">
+                    <th>name.fillcolor("#ff00aa")</th>
+                </table>
+                <p>Replace name with the name of your turtle and replace #ff00aa with whatever color you'd like. By the way, the fillcolor() 
+                    method will only work if we're creating a shape. I'll show you how to do this.</p>
+                <p>Include the following code:</p>
+                <table class="codetable">
+                    <th>name.begin_fill()</th>
+                </table>
+                <p>Replace name with the name of your turtle. The begin_fill() method lets us start creating a shape. From here, experiment 
+                    using the forward(), back(), left(), and right() methods to create the shape of the shell. Oce your shell is done, include the following code:</p>
+                <table class="codetable">
+                    <th>name.end_fill()</th>
+                </table>
+                <p>Replace name with the name of your turtle. The end_fill() method will tell the turtle to close the shape and fill it with the color we selected 
+                    above. To ensure this happens, you can start by moving your turtle to a specific coordinate using the setx() and setu() methods and then moving 
+                    your turtle back to those coordinates at the end of your shape drawing. You can use penup() and pendown() to move your turtle without creating 
+                    any additional lines, if you choose to.</p>
+                <p>Use these tools to then create the head and legs. You can customize the color of these parts, since they are their own shapes. You can create 
+                    an eye for your turtle using the dot() method. You can run your code as many times as you want to experiment with values. Make sure you save 
+                    the file first so that your changes will affect the test run.</p>
+                <a class="sourcecodebtn" href="https://github.com/KiindaLiinda/KiindaKodiing/blob/main/TurtleDrawing.py">View Source Code on GitHub</a>
             </div>
             <div class="articlefooter">
 
