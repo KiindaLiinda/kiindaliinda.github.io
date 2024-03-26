@@ -448,8 +448,8 @@ a.active,a:hover{
 
 /* Article Text */
 .articletxt{
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 @media (max-width: 1200px){
   .articletxt{
