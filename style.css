@@ -400,6 +400,18 @@ a.active,a:hover{
   color: #00ffff;
 }
 
+/* Blog */
+#codingtag{
+  display: show;
+}
+#gamingtag{
+  display: show;
+}
+#careertag{
+  display: show;
+}
+
+
 /* ARTICLE DEFAULT CSS */
 /* Promo Bar */
 .promobar{
