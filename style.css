@@ -373,6 +373,72 @@ a.active,a:hover{
     padding-right: 5%;
   }
 }
+
+.kodiingdiv{
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.kodiingdiv p{
+  text-align: left;
+  text-indent: 25px;
+}
+.kodiingdiv h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.kodiingdiv h3{
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 980px){
+  .kodiingdiv{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.kklinksec{
+  display: block;
+}
+.kklinkitem{
+  display: flex;
+  align-items: center;
+  background-color: #b1d4ee;
+  border: 3px solid #000011;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.kklinkicon{
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 0;
+  padding: 15px;
+  margin-left: 5px;
+}
+.kklinkicon a{
+  padding: 2px;
+}
+.kklinkicon i{
+  color: #000011;
+}
+.kklinkicon:hover{
+  background-color: #ffffff;
+}
+.kklinkicon a:hover{
+  background-color: #ffffff;
+}
+.kklinkdesc{
+  text-align: center;
+}
+.kklinkdesc h3{
+  padding-top: 10px;
+}
+.kklinkdesc p{
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
 /* Footer */
 .footer{
     background-color: #16748e;
