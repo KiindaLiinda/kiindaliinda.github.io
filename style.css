@@ -116,12 +116,13 @@ a.active,a:hover{
 .introsec{
   width: 100%;
   padding: 90px 0;
-  background: #a0f4ff;
+  background-image: url("images/introbg.png");
 }
 
 .intropic{
   height: auto;
   width: 302px;
+  border: 8px solid #ffffff;
 }
 
 .intro{
@@ -141,12 +142,16 @@ a.active,a:hover{
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #000000;
 }
 
 .introtxt h5{
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #000000;
 }
 
 @media (max-width: 1200px){
@@ -204,11 +209,21 @@ a.active,a:hover{
 .twitch{
   padding: 20px;
   text-align: center;
-  background-color: #a794ce;
+  background-image: url("images/twitchbg.png");
 }
 
-.twitch h1{
-  padding-bottom: 30px;
+.twitchtxt{
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.twitchtxt h1{
+  padding: 0 0 10px 0;
 }
 
 .twitchplayer{
