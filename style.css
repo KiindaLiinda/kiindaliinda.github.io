@@ -206,6 +206,19 @@ a.active,a:hover{
   background: #000011;
   border: 1px solid #4e92a8;
 }
+
+.sponsorsec{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 20px 0;
+}
+.sponsorsec img{
+  width: 10%;
+}
+.sponsorsec h2{
+  align-self: center;
+}
+
 .twitch{
   padding: 20px;
   text-align: center;
