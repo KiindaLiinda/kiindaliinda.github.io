@@ -116,13 +116,15 @@ a.active,a:hover{
 .introsec{
   width: 100%;
   padding: 90px 0;
-  background-image: url("images/introbg.png");
+  background-color: #ffffff; 
+  background-image: linear-gradient(to bottom, #ffffff 95%, #aad4e7 5%);
+  background-size: 100% 20px;
 }
 
 .intropic{
   height: auto;
   width: 302px;
-  border: 8px solid #ffffff;
+  border: 8px solid #a3c7fc;
 }
 
 .intro{
@@ -142,29 +144,77 @@ a.active,a:hover{
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #ffffff;
-  text-shadow: 2px 2px 0px #000000;
+  color: #000000;
+  padding-left: 30px;
+  text-shadow: 4px 4px 0px #ffffff;
 }
 
 .introtxt h5{
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 20px;
-  color: #ffffff;
-  text-shadow: 2px 2px 0px #000000;
+  color: #000000;
+  padding-left: 30px;
+  text-shadow: 4px 4px 0px #ffffff;
 }
+
+.quicklinks{
+  padding: 20px 50px;
+  text-align: center;
+  background-color: #66d2ea;
+}
+.quicklinks button{
+  min-width: 75%;
+  height: 60px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #16748e;
+}
+
+.quicklinks button:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+.quicklinks button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.quicklinks button:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
 
 @media (max-width: 1200px){
   .introtxt h2{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     margin-bottom: 10px;
+    padding-left: 0;
   }
   
   .introtxt h5{
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 20px;
+    padding-left: 0;
   }
 }
 
@@ -189,6 +239,7 @@ a.active,a:hover{
 }
 .introbtndiv{
   margin-top: 30px;
+  padding-left: 30px;
 }
 
 .introbtn{
