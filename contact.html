@@ -20,7 +20,7 @@
             </label>
             <img src="images/navlogo.png">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="kiindakodiing.html">KiindaKodiing</a></li>
@@ -32,8 +32,21 @@
         <div class="content">
             <h1>Contact Me</h1>
             <hr class="articlehr">
-            <div class="contactdiv">
-                
+            <div class="contactform">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="cl-title">
+                        <h2>Send an Email</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="a2329a70-6589-4c07-b8bf-9d620d7e18d2">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                    <button type="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="contact-right">
+                    <img src="images/emailimg.png">
+                </div>
             </div>
         </div>
 
