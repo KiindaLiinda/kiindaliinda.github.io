@@ -127,6 +127,10 @@ a.active,a:hover{
   border: 8px solid #a3c7fc;
 }
 
+.mobintropic{
+  display: none;
+}
+
 .intro{
   width: 1130px;
   max-width: 85%;
@@ -180,7 +184,6 @@ a.active,a:hover{
   border: none;
   background-color: #16748e;
 }
-
 .quicklinks button:hover {
   border-radius: 5px;
   padding-right: 24px;
@@ -200,7 +203,51 @@ a.active,a:hover{
   right: -20px;
   transition: 0.4s;
 }
-
+.charity{
+  background-color: #1C1D2D;
+  padding: 50px 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.charityimg{
+  width: 75%;
+}
+.charity button{
+  min-width: 75%;
+  height: 60px;
+  color: #000000;
+  padding: 5px 10px;
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #EF255E;
+}
+.charity button:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+.charity button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.charity button:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
 
 @media (max-width: 1200px){
   .introtxt h2{
@@ -221,10 +268,19 @@ a.active,a:hover{
 @media screen and (max-width: 980px){
   .introtxt{
     padding-left: 20px;
+    text-align: center;
   }
-  .intropic{
+
+  .mobintropic{
+    display: inline;
     width: 200px;
+    border: 6px solid #a3c7fc;
   }
+
+  .intropic{
+    display: none;
+  }
+
   .introtxt h2{
     font-size: 20px;
     font-weight: 600;
